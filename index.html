@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's The Weather Like</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+	  <link rel="stylesheet" href="assets/css/style.css"> 
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="container">
+        <nav class="navBar">
+          <div class="icon">
+            <h1> WEATHER <span class="now">NOW</span></h1>
+          </div>
+          <h3 id="locationText"><i class="fas fa-map-marker-alt"></i> Location</h3>
+        </nav>
+        <main class="mainContent">
+          <form id="form-container" class="form-container">
+            <label class="cityText" for="city">Show me : </label><input type="text" id="city" value="">
+            <button id="submit-btn">SEARCH</button>
+        </form>
+      	</main>
+      </div>
+    </div>
+  	<script src="assets/js/script.js"></script>
+  </body>
+ </html>

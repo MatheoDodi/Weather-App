@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Raleway;
+	color: white;
+	background: url(../img/back.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	font-size: 2rem;
+	background: rgba(0,0,0,0);
+	color: inherit;
+	border-style: solid;
+	padding: 0.3rem 4rem;
+}
+
+button:hover {
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,.45);
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
+}
+
+.navBar {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	padding: 1rem;
+	align-items: center;
+}
+
+.icon {
+	border: 2px solid white;
+	text-align: center;
+	font-size: 2rem;
+	padding: 0.75rem;
+}
+
+.now {
+	font-weight: 900;
+}
+
+#locationText {
+	justify-self: end;
+	font-size: 2rem;
+}
+
+.mainContent {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	align-content: center;
+}
+
+#city {
+	font-size: 2rem;
+	width: 80%;
+	background: rgba(255,255,255,0.3);
+	border-style: solid;
+	border-color: white;
+}
+
+.cityText {
+	font-size: 2rem;
+}
+
+.form-container {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	align-items: center;
+	grid-column-gap: 1rem;
+	grid-row-gap: 3rem;
+
+}
+
+label {
+	grid-column: 1 ;
+}
+
+#submit-btn {
+	grid-column: 1 / -1;
+}
