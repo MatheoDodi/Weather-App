@@ -103,3 +103,9 @@ label {
 #submit-btn {
 	grid-column: 1 / -1;
 }
+
+.tempText {
+	font-size: 5rem;
+	margin: 2rem;
+	text-align: center;
+}
