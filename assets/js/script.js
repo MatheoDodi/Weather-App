@@ -13,6 +13,19 @@ function loadData() {
 		let locationName = response.name;
 		let temp = response.main.temp;
 		let desc = response.weather[0].description;
+
+		if (temp >= 70) {
+			$('body').css({
+				'background' : 'url(assets/img/sun.jpg) no-repeat center center fixed',
+				'background-size' : 'cover'	
+			})
+		} else if ( temp >= 64 && temp < 70) {
+			$('body').css({
+				'background' : 'url(assets/img/hazy.jpg) no-repeat center center fixed',
+				'background-size' : 'cover'	
+			})
+		}
+
 		$('#form-container').before('<p class="tempText">' + temp + '  F<br> ' + desc + '</p>');
 		$('#locationText').html('<i class="fas fa-map-marker-alt"></i> ' + locationName);
 	})
