@@ -119,3 +119,20 @@ label {
 	margin: 2rem;
 	text-align: center;
 }
+
+#locationButton {
+	display: block;
+	grid-column: 1 / -1;
+	justify-self: center;
+	padding: 1rem;
+	border-width: 3px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+}
+
+#locationButton:hover {
+	background: white;
+	color: black;
+	cursor: pointer;
+}
