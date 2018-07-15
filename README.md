@@ -3,4 +3,4 @@ creating a weather web application that displays the current weather of a city g
 
 Update: Now displays the weather of the user's current location using geolocation.
 
-[View Here] (https://matthewdodi.github.io/Weather-App/)
+View Here (https://matthewdodi.github.io/Weather-App/)
